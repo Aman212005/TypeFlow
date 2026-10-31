@@ -5,29 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="background"></div>
     <header class="header">
-        
-    </header>
-    
-    <div class="app-layout">
-        <aside class="sidebar">
-            <nav class="sidebar-nav">
+        <div class="header-left">
+            <div class="logo-img">
 
-            </nav>
-        </aside>
+                <img src="assets/logo/logo.png" alt="TypeFlow">
+            </div>
+
+            <div class="logo-txt">
+                <span class="logo-txt-superscript">TypeFlow</span>
+                <span class="logo-txt-subscript">Better Typing Smoother Flow</span>
+
+            </div>
+        </div>
+
+
+        <div class="header-menu">
+            <ul class="header-nav">
+
+                <a class="header-nav-option">Test</a>
+                <a class="header-nav-option">Leaderboard</a>
+                <a class="header-nav-option">About</a>
+                <a class="header-nav-option">Settings</a>
+
+            </ul>
+        </div>
+        <div class="header-right">
+            <a class="header-right-option"> Notifications</a>
+            <a class="header-right-option"> Profile</a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+
         <main class="main-stage">
             <section class="hero">
+                <div class="hero-title-group">
+                    <div>
+                        <span class="hero-maintext" id="type">Type </span>
+                        <span class="hero-maintext" id="with">with</span>
+                    </div>
+                    <div class="hero-maintext" id="purpose">Purpose</div>
+                    
+                </div>
 
+                <div id="hero-subtext">
+                    Improve your typing speed, accuracy and focus with a clean, distraction-free experience
+                </div>
             </section>
 
 
             <section class="typing-controls">
+                <div class = "typing-control-box">
+                    <span>Time</span>
+                    <select class="typing-control-options" id="selectTime">
+                        <option>10s</option>
+                        <option>30s</option>
+                        <option>60s</option>
+                    </select>
 
+                    <select class="typing-control-options" id="selectMode">
+                        <option>Random Words</option>
+                        <option>Quote</option>
+                        
+                    </select>
+
+                    <select class="typing-control-options" id="selectDifficulty">
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                    
+                </div>
             </section>
 
 
@@ -45,7 +105,7 @@
             <section class="section-result">
 
             </section>
-        </main>   
+        </main>
     </div>
 
     <footer class="footer">
