@@ -49,51 +49,120 @@
 
     <div class="app-layout">
 
-        <main class="main-stage">
-            <section class="hero">
-                <div class="hero-title-group">
-                    <div>
-                        <span class="hero-maintext" id="type">Type </span>
-                        <span class="hero-maintext" id="with">with</span>
+
+        <div class="main-division">
+
+            <div class="main-stage">
+                <section class="hero">
+                    <div class="hero-title-group">
+                        <div>
+                            <span class="hero-maintext" id="type">Type </span>
+                            <span class="hero-maintext" id="with">with</span>
+                        </div>
+                        <div class="hero-maintext" id="purpose">Purpose</div>
+
                     </div>
-                    <div class="hero-maintext" id="purpose">Purpose</div>
-                    
+
+                    <div id="hero-subtext">
+                        Improve your typing speed, accuracy and focus with a clean, distraction-free experience
+                    </div>
+                </section>
+
+
+                <section class="typing-controls">
+                    <div class="typing-control-area">
+                        <div class="typing-control-label">
+                            <div class="typing-control-icons">
+                                <img class="typing-control-icon" src="assets/icons/time.png">
+                            </div>
+                            <div class="typing-control-text">
+                                <div class="typing-control-maintext">Time</div>
+                                <div class="typing-control-selected-option">30s</div>
+                            </div>
+                            <select class="typing-control-options" id="selectTime">
+                                <option>10s</option>
+                                <option>30s</option>
+                                <option>60s</option>
+                            </select>
+                        </div>
+
+                        <div class="typing-control-label">
+                            <div class="typing-control-icons">
+                                <img class="typing-control-icon" src="assets/icons/rocket.png">
+                            </div>
+                            <div class="typing-control-text">
+                                <div class="typing-control-maintext">Mode</div>
+                                <div class="typing-control-selected-option">Words</div>
+                            </div>
+                            <select class="typing-control-options" id="selectMode">
+                                <option>Random Words</option>
+                                <option>Quote</option>
+                            </select>
+                        </div>
+
+                        <div class="typing-control-label">
+                            <div class="typing-control-icons">
+                                <img class="typing-control-icon" src="assets/icons/graph-bar.png">
+                            </div>
+                            <div class="typing-control-text">
+                                <div class="typing-control-maintext">Difficulty</div>
+                                <div class="typing-control-selected-option">Medium</div>
+                            </div>
+                            <select class="typing-control-options" id="selectDifficulty">
+                                <option>Easy</option>
+                                <option>Medium</option>
+                                <option>Hard</option>
+                            </select>
+                        </div>
+                        <div class="start-button">
+                            <img class="start-icon" src="assets/icons/play-button.png">
+                        </div>
+
+
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="stats-card">
+                <div class="stats-card-header">
+
+                    <div class="stats-card-title">Your Stats</div>
+                </div>
+                <div class="WPM">
+
+                    <span class="WPM-value">0</span>
+                    <span class="WPM-label">WPM</span>
+                    <div class="stats-card-subtext">Words-per-minute</div>
                 </div>
 
-                <div id="hero-subtext">
-                    Improve your typing speed, accuracy and focus with a clean, distraction-free experience
-                </div>
-            </section>
-
-
-            <section class="typing-controls">
-                <div class = "typing-control-box">
-                    <span>Time</span>
-                    <select class="typing-control-options" id="selectTime">
-                        <option>10s</option>
-                        <option>30s</option>
-                        <option>60s</option>
-                    </select>
-
-                    <select class="typing-control-options" id="selectMode">
-                        <option>Random Words</option>
-                        <option>Quote</option>
+                <div class="more-stats">
+                    <div class="accuracy">
+                        <div class="accuracy-value more-stats-maintext">0%</div>
+                        <div class="accuracy-label stats-card-subtext">Accuracy</div>
                         
-                    </select>
+                    </div>
+                    <div class="correct-words">
+                        <div class="correct-words-value more-stats-maintext">0</div>
+                        <div class="correct-words-label stats-card-subtext">Correct Words</div>
 
-                    <select class="typing-control-options" id="selectDifficulty">
-                        <option>Easy</option>
-                        <option>Medium</option>
-                        <option>Hard</option>
-                    </select>
+                    </div>
+                    <div class="incorrect-words">
+                        <div class="incorrect-words-value more-stats-maintext">0</div>
+                        <div class="incorrect-words-label stats-card-subtext">Incorrect Words</div>
+                    </div>
                     
                 </div>
-            </section>
+            </div>
+        </div>
 
+
+        <div class="work-area">
 
 
             <section class="typing-area">
-
+                <div class="typing-area-text">Hello, this is a typing test. Type the words as fast as you can and try to
+                    get the highest score possible. Good luck!</div>
             </section>
 
             <section class="stat-card">
@@ -105,7 +174,7 @@
             <section class="section-result">
 
             </section>
-        </main>
+        </div>
     </div>
 
     <footer class="footer">
