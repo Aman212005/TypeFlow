@@ -71,52 +71,87 @@
 
                 <section class="typing-controls">
                     <div class="typing-control-area">
-                        <div class="typing-control-label">
-                            <div class="typing-control-icons">
-                                <img class="typing-control-icon" src="assets/icons/time.png">
+
+                        <div class="typing-control-wrapper" id="timeWrapper">
+
+                            <div class="typing-control-label" id="timeDropdownBtn">
+
+                                <div class="typing-control-icons">
+                                    <img class="typing-control-icon" src="assets/icons/time.png">
+                                </div>
+
+                                <div class="typing-control-text">
+                                    <div class="typing-control-maintext">Time</div>
+                                    <div class="typing-control-selected-option" id="selectedTime">30s</div>
+                                </div>
+
+                                <div class="arrow-icon">
+                                    <img class="arrow-icon-img" src="assets/icons/chevron-down.png" alt="Arrow">
+                                </div>
+
                             </div>
-                            <div class="typing-control-text">
-                                <div class="typing-control-maintext">Time</div>
-                                <div class="typing-control-selected-option">30s</div>
+
+
+                            <div class="dropdown-menu" id="timeDropdown">
+                                <div class="dropdown-option" data-value="15s">15s</div>
+                                <div class="dropdown-option" data-value="30s">30s</div>
+                                <div class="dropdown-option" data-value="60s">60s</div>
+                                <div class="dropdown-option" data-value="120s">120s</div>
+
                             </div>
-                            <div class="arrow-icon">
-                                <img class="arrow-icon-img" src="assets/icons/chevron-down.png" alt="Arrow">
-                            </div>
-                            
                         </div>
 
-                        <div class="typing-control-label">
-                            <div class="typing-control-icons">
-                                <img class="typing-control-icon" src="assets/icons/rocket.png">
+                        <div class="typing-control-wrapper" id="modeWrapper">
+                            <div class="typing-control-label" id="modeDropdownBtn">
+                                <div class="typing-control-icons">
+                                    <img class="typing-control-icon" src="assets/icons/rocket.png">
+                                </div>
+                                <div class="typing-control-text">
+                                    <div class="typing-control-maintext">Mode</div>
+                                    <div class="typing-control-selected-option" id="selectedMode">Words</div>
+                                </div>
+                                <div class="arrow-icon">
+
+                                    <img class="arrow-icon-img" src="assets/icons/chevron-down.png" alt="Arrow">
+                                </div>
                             </div>
-                            <div class="typing-control-text">
-                                <div class="typing-control-maintext">Mode</div>
-                                <div class="typing-control-selected-option">Words</div>
-                            </div>
-                            <div class="arrow-icon"> 
+
+                            <div class="dropdown-menu " id="modeDropdown">
+                                <div class="dropdown-option" data-value="Words">Words</div>
+                                <div class="dropdown-option" data-value="Time">Time</div>
                                 
-                                <img class="arrow-icon-img" src="assets/icons/chevron-down.png" alt="Arrow">
+
                             </div>
                         </div>
 
-                        <div class="typing-control-label">
-                            <div class="typing-control-icons">
-                                <img class="typing-control-icon" src="assets/icons/graph-bar.png">
+                        <div class="typing-control-wrapper" id="difficultyWrapper">
+                            <div class="typing-control-label" id="difficultyDropdownBtn">
+                                <div class="typing-control-icons">
+                                    <img class="typing-control-icon" src="assets/icons/graph-bar.png">
+                                </div>
+                                <div class="typing-control-text">
+                                    <div class="typing-control-maintext">Difficulty</div>
+                                    <div class="typing-control-selected-option" id="selectedDifficulty">Medium</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <img class="arrow-icon-img" src="assets/icons/chevron-down.png" alt="Arrow">
+                                </div>
                             </div>
-                            <div class="typing-control-text">
-                                <div class="typing-control-maintext">Difficulty</div>
-                                <div class="typing-control-selected-option">Medium</div>
-                            </div>
-                            <div class="arrow-icon"> 
-                                <img class="arrow-icon-img" src="assets/icons/chevron-down.png" alt="Arrow">
+
+                            <div class="dropdown-menu" id="difficultyDropdown">
+                                <div class="dropdown-option" data-value="Easy">Easy</div>
+                                <div class="dropdown-option" data-value="Medium">Medium</div>
+                                <div class="dropdown-option" data-value="Hard">Hard</div>
+                                
+
                             </div>
                         </div>
                         <div class="start-button">
                             <img class="start-icon" src="assets/icons/play-button.png">
-                            
-                            
+
+
                         </div>
-                        
+
 
 
 
@@ -140,7 +175,7 @@
                     <div class="accuracy">
                         <div class="accuracy-value more-stats-maintext">0%</div>
                         <div class="accuracy-label stats-card-subtext">Accuracy</div>
-                        
+
                     </div>
                     <div class="correct-words">
                         <div class="correct-words-value more-stats-maintext">0</div>
@@ -151,7 +186,7 @@
                         <div class="incorrect-words-value more-stats-maintext">0</div>
                         <div class="incorrect-words-label stats-card-subtext">Incorrect Words</div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -175,6 +210,9 @@
     <footer class="footer">
 
     </footer>
+
+
+    <script src="js/settings.js"></script>
 
 </body>
 

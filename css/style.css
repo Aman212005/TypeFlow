@@ -405,9 +405,43 @@ img{
   opacity:0.6;
 }
 
+.typing-control-wrapper{
+  position: relative;
+  width:155px;
+}
 
+.dropdown-menu{
+  position:absolute;
+  background-color: var(--color-surface-card);
+  width:100%;
+  top:calc(100% + 8px);
+  left:0;
+  padding:6px;
+  border:1px solid var(--color-border-subtle);
+  border-radius : 10px;
+  display:none;
+  flex-direction: column;
+  z-index: 100;
+}
 
+.dropdown-menu.active{
+  display:flex;
+}
 
+.dropdown-option{
+  padding:10px;
+  font-size:12px;
+  color:var(--color-text-secondary);
+  border-radius:6px;
+  cursor:pointer;
+  transition:background-color 0.2 ease;
+
+}
+
+.dropdown-option:hover {
+    background-color: var(--color-surface-overlay);
+    color: var(--color-accent-neon);
+}
 /* Start Button */
 
 
